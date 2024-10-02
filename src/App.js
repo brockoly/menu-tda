@@ -1,5 +1,8 @@
 import logo from './assets/images/logo.png';
 import './App.css';
+import Card from 'react-bootstrap/Card';
+import lomo from './assets/images/lomo.jpg';
+import cazuela from './assets/images/cazuela.jpg';
 
 function App() {
   const date = new Date();
@@ -9,10 +12,21 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      <body className='body'>
+      <body className="mainContainer">
         <p>{todaysMenu}</p>
-        <p>- Salchichas con pure</p>
-        <p>- Pollito con papas</p>
+        <Card style={{ width: '26rem' }}>
+          <Card.Img variant="top" src={lomo} />
+          <Card.Body>
+            <Card.Title>Lomo Saltado</Card.Title>
+          </Card.Body>
+        </Card>
+        <br/>
+        <Card style={{ width: '26rem' }}>
+          <Card.Img variant="top" src={cazuela} />
+          <Card.Body>
+            <Card.Title>Cazuela de vacuno</Card.Title>
+          </Card.Body>
+        </Card>
       </body>
     </div>
   );
