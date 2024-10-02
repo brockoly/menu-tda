@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import logo from './assets/images/logo.png';
 import './App.css';
 
 function App() {
+  const date = new Date();
+  const todaysMenu = `El menú de hoy ${date.toLocaleDateString('es-ES')} es:`;
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <body className='body'>
+        <p>{todaysMenu}</p>
+        <p>- Salchichas con pure</p>
+        <p>- Pollito con papas</p>
+      </body>
     </div>
   );
 }
