@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import logo from './assets/images/logo.png';
 import pollo from './assets/images/pollo.jpg';
-import fideos from './assets/images/fideos.jpeg';
+import fideos from './assets/images/fideos.jpg';
 
 function App() {
   const date = new Date();
