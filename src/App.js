@@ -4,6 +4,8 @@ import Image from 'react-bootstrap/Image';
 import jubileo from './assets/images/jubileo.png';
 import pollo from './assets/images/pollo.jpg';
 import fideos from './assets/images/fideos.jpg';
+import ajiGallina from './assets/images/aji-gallina.jpg';
+import lomoSalt from './assets/images/lomo-salt.jpg';
 
 function App() {
   const date = new Date();
@@ -17,16 +19,16 @@ function App() {
         <h2>{todaysMenu}</h2>
         <br/>
         <Card style={{ width: '24rem' }}>
-          <Card.Img variant="top" src={pollo} />
+          <Card.Img variant="top" src={ajiGallina} />
           <Card.Body>
-            <Card.Title>Pollo al horno con puré rústico</Card.Title>
+            <Card.Title>Ají de gallina (arroz con papas cocidas)</Card.Title>
           </Card.Body>
         </Card>
         <br/>
         <Card style={{ width: '24rem' }}>
-          <Card.Img variant="top" src={fideos} />
+          <Card.Img variant="top" src={lomoSalt} />
           <Card.Body>
-            <Card.Title>Fideos a la boloñesa</Card.Title>
+            <Card.Title>Lomo saltado (arroz con papas fritas)</Card.Title>
           </Card.Body>
         </Card>
       </body>
